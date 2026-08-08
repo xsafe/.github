@@ -1,8 +1,9 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/crossecute/.github/main/brand/crossecute-icon-512.png" width="128" alt="crossecute" />
-
-# crossecute
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/crossecute/.github/main/brand/crossecute-icon-black.png" />
+  <img src="https://raw.githubusercontent.com/crossecute/.github/main/brand/crossecute-icon-white.png" width="320" alt="crossecute" />
+</picture>
 
 **One multisig, on the chain you trust. Control on every other.**
 

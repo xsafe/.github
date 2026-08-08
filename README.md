@@ -6,8 +6,8 @@ Organization-level defaults and brand assets for **crossecute**.
 
 ## Contents
 
-- [`brand/`](brand/) — the crossecute icon (SVG source + rasterized PNGs), palette, and
-  usage. See [`brand/README.md`](brand/README.md).
+- [`brand/`](brand/) — the crossecute mark, in light- and dark-background variants,
+  plus palette and usage. See [`brand/README.md`](brand/README.md).
 
-To use the mark as the org avatar, upload `brand/crossecute-icon-512.png` at
+To use the mark as the org avatar, upload `brand/crossecute-avatar-512.png` at
 **Settings → Profile → Profile picture** (avatars are upload-only).

@@ -1,47 +1,43 @@
 # crossecute — brand mark
 
-The icon expresses the core thesis: **a single multisig (the signing hub) controls
-operations on every other chain.**
+The mark is a lockup: a **check** joined to **spokes fanning out to four nodes**,
+above the wordmark.
 
-- **Center — a diamond:** the one signing hub. Where authority lives. It is drawn as
-  an Ethereum diamond because Ethereum is the expected anchor, though the home chain
-  is a deployment choice.
-- **Spokes:** control radiating outward from that hub to every chain.
-- **Six nodes + hexagon ring:** the network of destination chains. Uniform
-  and interchangeable — *any* chain.
+- **Check:** the verification step. Nothing moves until what you signed is proven
+  to be what was built.
+- **Spokes → nodes:** one origin carrying control outward to every destination
+  chain. Uniform and interchangeable — *any* chain.
 
 ## Files
 
 | File | Use |
 |------|-----|
-| `crossecute-icon.svg` | Primary avatar mark on a dark rounded tile (source of truth) |
-| `crossecute-mark.svg` | Transparent mark, mid-tones — for light or dark backgrounds |
-| `crossecute-icon-{256,400,512}.png` | Rasterized avatar (upload one of these to GitHub) |
-| `crossecute-mark-512.png` | Rasterized transparent mark |
+| `crossecute-icon-white.png` | Dark mark on a white tile — for light backgrounds |
+| `crossecute-icon-black.png` | Light mark on a black tile — for dark backgrounds |
+| `crossecute-avatar-512.png` | Square 512×512 avatar — mark only, no wordmark |
+
+Both are raster PNGs with rounded corners and transparent corner pixels, so they
+sit cleanly on any background. Pick the variant matching the surface behind it,
+or serve both via `<picture>` and `prefers-color-scheme` (see `profile/README.md`).
 
 ## Palette
 
+The mark is monochrome.
+
 | Token | Hex | Role |
 |-------|-----|------|
-| Hub violet (light facet) | `#B7A6FF` | Diamond upper-left |
-| Hub violet | `#9A85F7` | Diamond upper-right |
-| Hub indigo | `#8B79F3` | Diamond lower-left |
-| Hub indigo (deep) | `#6E5CEA` | Diamond lower-right |
-| Node | `#C7D2FE` (dark bg) / `#6366F1` (light) | Destination chains |
-| Spoke / ring | `#5B6493` (dark bg) / `#94A3B8` (light) | Connections |
-| Tile background | `#141A33 → #0A0E1F` | Avatar gradient |
+| Ink | `#000000` | Mark on light surfaces; tile on the black variant |
+| Paper | `#FFFFFF` | Mark on dark surfaces; tile on the white variant |
 
 ## Setting the GitHub org avatar
 
-GitHub avatars are UI-only and must be raster (PNG/JPG):
+GitHub avatars are UI-only, must be raster, and are cropped to a square:
 
 1. Go to **https://github.com/organizations/crossecute/settings/profile**
 2. Under **Profile picture**, click **Upload a picture…**
-3. Choose `crossecute-icon-512.png`, position, and save.
+3. Choose `crossecute-avatar-512.png`, position, and save.
 
-## Regenerating PNGs
-
-```bash
-pip install cairosvg
-python3 -c "import cairosvg; cairosvg.svg2png(url='crossecute-icon.svg', write_to='crossecute-icon-512.png', output_width=512, output_height=512)"
-```
+Use the avatar file, not the lockups — the lockups are non-square and their
+wordmark becomes unreadable once GitHub crops and scales them down. The avatar
+is the mark alone at 78% coverage, which stays clear at small sizes and survives
+the circular crop GitHub applies in comment threads and member lists.
